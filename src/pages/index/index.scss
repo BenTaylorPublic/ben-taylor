@@ -2,6 +2,12 @@ $sectionMarginTops: 40px;
 $projectCardHeight: 250px;
 $projectCardWidth: 370px;
 
+canvas {
+  width: 100%;
+  background-color: white;
+  height: 300px;
+}
+
 a {
   color: white;
   text-decoration: none;

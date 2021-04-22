@@ -1,3 +1,5 @@
+import { CanvasView } from "./canvas/canvas";
+
 class IndexView {
     public static initialize(): void {
         //In a timeout to not trigger the animation on first load
@@ -8,6 +10,9 @@ class IndexView {
                 projectCardChilds[i].classList.remove("preload");
             }
         }, 200);
+
+        const canvasElement: HTMLCanvasElement = document.getElementsByTagName("canvas").item(0) as HTMLCanvasElement;
+        const canvas: CanvasView = new CanvasView(canvasElement);
     }
 }
 
